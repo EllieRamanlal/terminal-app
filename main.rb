@@ -1,5 +1,6 @@
 require "artii"
 require "tty-prompt"
+require "colorize"
 
 prompt = TTY::Prompt.new
 
@@ -20,6 +21,7 @@ def menu(prompt)
     {name: "View previous destination recommendations", value: 3},
     {name: "Exit", value: 4}
     ]
+
     prompt.select("What would you like to do today?", choices)
 end
 
@@ -32,10 +34,25 @@ end
 
 system 'clear'
 
-puts heading.asciify('HolidayHelper')
+# HolidayHelper heading
+puts heading.asciify('HolidayHelper').colorize(:light_cyan)
 
+# airplane image
 puts File.readlines("plane.txt")
 
+# welcome message
 greeting
 
-menu(prompt)
+# main menu
+# loop do
+#     case menu(prompt)
+#     when 1
+      
+#     when 2
+      
+#     when 3
+      
+#     when 4
+      
+#     end    
+#   end
