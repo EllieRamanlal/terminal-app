@@ -2,16 +2,23 @@ require "artii"
 require "tty-prompt"
 require "colorize"
 
+require_relative "random_generator"
+require_relative "quiz"
+
 prompt = TTY::Prompt.new
 
-heading = Artii::Base.new
+heading = Artii::Base.new :font => 'nancyj-underlined'
 
 
 def greeting
     puts "Hi there!"
+    sleep (2)
     puts
     puts "Welcome to HolidayHelper - where we help you find your perfect holiday destination!"
+    sleep (2)
     puts
+    puts "What is your name?"
+    print ">  "
 end
 
 def menu(prompt)
@@ -32,6 +39,8 @@ end
 # main body
 #-------------------------------------------------------
 
+
+
 system 'clear'
 
 # HolidayHelper heading
@@ -43,16 +52,21 @@ puts File.readlines("plane.txt")
 # welcome message
 greeting
 
-# main menu
-# loop do
-#     case menu(prompt)
-#     when 1
-      
-#     when 2
-      
-#     when 3
-      
-#     when 4
-      
-#     end    
-#   end
+name = gets.strip.downcase
+
+newquiz = Quiz.new(name)
+newrandom = Random.new(name)
+
+loop do
+    puts 
+    case menu(prompt)
+    when 1
+        newquiz.questions
+    when 2
+        newrandom.chooser
+    when 3
+    
+    when 4
+        
+    end    
+end
