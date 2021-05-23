@@ -1,7 +1,9 @@
-
+require "artii"
 require "tty-prompt"
 
 prompt = TTY::Prompt.new
+
+heading = Artii::Base.new
 
 def greeting
     puts "Hello!"
@@ -21,12 +23,13 @@ end
 
 
 
-
 #-------------------------------------------------------
 # main body
 #-------------------------------------------------------
 
 system 'clear'
+
+puts heading.asciify('HolidayHelper')
 
 greeting
 
