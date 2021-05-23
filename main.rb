@@ -5,17 +5,20 @@ prompt = TTY::Prompt.new
 
 heading = Artii::Base.new
 
+
 def greeting
-    puts "Hello!"
-    puts "Welcome to HolidayHelper!"
-    puts " "
+    puts "Hi there!"
+    puts
+    puts "Welcome to HolidayHelper - where we help you find your perfect holiday destination!"
+    puts
 end
 
 def menu(prompt)
     choices = [
-    {name: "Find a destination for my next holiday", value: 1},
-    {name: "View previous holiday recommendations", value: 2},
-    {name: "Exit", value: 3}
+    {name: "Holiday destination quiz", value: 1},
+    {name: "Random destination generator", value: 2},
+    {name: "View previous destination recommendations", value: 3},
+    {name: "Exit", value: 4}
     ]
     prompt.select("What would you like to do today?", choices)
 end
@@ -30,6 +33,8 @@ end
 system 'clear'
 
 puts heading.asciify('HolidayHelper')
+
+puts File.readlines("plane.txt")
 
 greeting
 
