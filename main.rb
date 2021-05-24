@@ -1,18 +1,18 @@
+require_relative "generator"
+require_relative "quiz"
+
 require "artii"
 require "tty-prompt"
 require "colorize"
+require "tty-progressbar"
 
-require_relative "random_generator"
-require_relative "quiz"
 
 prompt = TTY::Prompt.new
-
 heading = Artii::Base.new :font => 'nancyj-underlined'
 
 
 def greeting
     puts "Hi there!"
-    sleep (2)
     puts
     puts "Welcome to HolidayHelper - where we help you find your perfect holiday destination!"
     sleep (2)
@@ -54,19 +54,18 @@ greeting
 
 name = gets.strip.downcase
 
-newquiz = Quiz.new(name)
-newrandom = Random.new(name)
+quiz_instance = Quiz.new(name)
+generator_instance = Generator.new(name)
+
 
 loop do
-    puts 
-    case menu(prompt)
-    when 1
-        newquiz.questions
-    when 2
-        newrandom.chooser
-    when 3
-    
-    when 4
-        
-    end    
+  case menu(prompt)
+  when 1
+    quiz_instance.questions
+  when 2
+    generator_instance.picker
+  when 3
+
+  when 4
+  end
 end
