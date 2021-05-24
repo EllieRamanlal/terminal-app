@@ -30,6 +30,18 @@ class Random
 
         system 'clear'
 
+        puts "fetching random destination..."
+        puts " "
+
+        bar = TTY::ProgressBar.new("[:bar]", total: 30)
+
+        sleep (1.5)
+       
+        30.times do
+            sleep(0.1)
+            bar.advance 
+        end
+
         country = locations.sample
         puts "We have the perfect country for you!"
         sleep (1)
