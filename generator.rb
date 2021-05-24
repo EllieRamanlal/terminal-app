@@ -33,7 +33,7 @@ class Random
         country = locations.sample
         puts "We have the perfect country for you!"
         puts "We think you would love..."
-        puts "#{country}!"
+        puts "#{country}!".colorize(:light_cyan)
     end
 
 end
