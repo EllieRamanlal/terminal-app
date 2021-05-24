@@ -33,7 +33,7 @@ class Random
         puts "fetching random destination..."
         puts " "
 
-        bar = TTY::ProgressBar.new("[:bar]", total: 30)
+        bar = TTY::ProgressBar.new("[:bar]", bar_format: :block, clear: true, total: 30)
 
         sleep (1.5)
        
