@@ -1,10 +1,10 @@
-class Random
+class Generator
 
     def initialize(name)
         @name = name
     end
 
-    def chooser
+    def picker
         locations = [
             "Berlin, Germany",
             "Kyoto, Japan",

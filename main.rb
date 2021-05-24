@@ -29,7 +29,7 @@ def menu(prompt)
     {name: "Exit", value: 4}
     ]
 
-    prompt.select("What would you like to do today?", choices)
+    prompt.select("\nWhat would you like to do today?", choices)
 end
 
 
@@ -44,7 +44,7 @@ end
 system 'clear'
 
 # HolidayHelper heading
-puts heading.asciify('HolidayHelper').colorize(:light_cyan)
+puts heading.asciify(' HolidayHelper').colorize(:light_cyan)
 
 # airplane image
 puts File.readlines("plane.txt")
