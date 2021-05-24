@@ -40,6 +40,31 @@ class Quiz
         ]
         vibe = prompt.select("\n\nWhat kinds of activities would you like to be doing on your holiday\n", choices)
 
+        system 'clear'
+
+        puts "Based on your preferences, we think you'd love to visit the following destination..."
+        puts " "
+
+        sleep (3)
+
+        if weather == 1 && vibe == 1
+            puts hot & beach
+        elsif weather == 1 && vibe == 2
+            puts hot & adventure
+        elsif weather == 1 && vibe == 3
+            puts hot & culture
+        elsif weather == 1 && vibe == 4
+            puts hot & nightlife
+        elsif weather == 2 && vibe == 1
+            puts cold & beach
+        elsif weather == 2 && vibe == 2
+            puts cold & adventure
+        elsif weather == 2 && vibe == 3
+            puts cold & culture
+        elsif weather == 2 && vibe == 4
+            puts cold & nightlife
+        end
+
 
     end
 
