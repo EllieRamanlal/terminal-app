@@ -4,7 +4,7 @@ class Quiz
         @name = name
     end
 
-    def question
+    def questions
 
         hot = ["Kauai, Hawaii", "Costa Rica", "Ho Chi Minh City, Vietnam", "Barcelona, Spain"]
         cold = ["Kvalvika Beach, Lofoten Islands, Norway", "Whistler, Canada", "kyoto, Japan", "Prague, Czech Republic"]
@@ -25,8 +25,8 @@ class Quiz
 
 
         choices = [
-            {name: "I want that summer sun", value: 1},
-            {name: "Get me in my winter woolies", value: 2},
+            {name: "Hot Weather", value: 1},
+            {name: "Cold Weather", value: 2},
         ]
         weather = prompt.select("\n\nFirstly, what is your preference for weather?\n", choices)
         sleep (2)
@@ -38,14 +38,22 @@ class Quiz
             {name: "Culture – show me the history", value: 3},
             {name: "Nightlife – time to get loose", value: 4},
         ]
-        vibe = prompt.select("\n\nWhat kinds of activities would you like to be doing on your holiday\n", choices)
+        vibe = prompt.select("\n\nWhat kinds of activities would you like to be doing on your holiday?\n", choices)
 
         system 'clear'
 
         puts "Based on your preferences, we think you'd love to visit the following destination..."
         puts " "
 
-        sleep (3)
+
+        bar = TTY::ProgressBar.new("[:bar]", bar_format: :block, clear: true, total: 30)
+
+        sleep (1.5)
+       
+        30.times do
+            sleep(0.1)
+            bar.advance 
+        end
 
         if weather == 1 && vibe == 1
             puts hot & beach
