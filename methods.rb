@@ -79,7 +79,7 @@ def endofbucketlistmenu(prompt4)
     {name: "Back to main menu", value: 2},
     ]
 
-    prompt4.select("\nWhat would you like to do now?\n", choices)
+    prompt4.select("\n\n\nWhat would you like to do now?\n", choices)
 end
 
 

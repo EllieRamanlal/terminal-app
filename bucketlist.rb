@@ -8,7 +8,7 @@ class Bucketlist
 
     # To view bucketlist
     def view
-        puts "\n#{@name.capitalize}'s bucketlist of destinations:\n"
+        puts "\n#{@name.capitalize}'s bucketlist of destinations:\n\n"
         sleep(1.5)
     
         if file_exist?
@@ -36,7 +36,9 @@ class Bucketlist
       @destinationlog = file_to_array(@file_path)
       @destinationlog << dest
       array_to_file(@destinationlog)
-      puts "\nYour destination has been added to your list!\n"
+      sleep(2)
+      puts "\nYour destination has been added to your bucketlist!\n"
+      sleep(3)
     end
 
     # To remove destination from bucketlist

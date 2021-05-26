@@ -39,7 +39,7 @@ plane
 
 loop do
   case mainmenu(prompt)
-  # Quiz
+  # CHOICE = QUIZ
   when 1
     quiz_loop_running = true
     wait_clear(2)
@@ -59,8 +59,7 @@ loop do
         mainheading
       end
     end  
-
-  # Random generator
+  # CHOICE = RANDOM GENERATOR
   when 2
     generator_loop_running = true
     wait_clear(2)
@@ -79,16 +78,15 @@ loop do
         mainheading
       end
     end  
-
-  # Bucketlist
+  # CHOICE = BUCKETLIST
   when 3
     bucketlist_loop_running = true
     wait_clear(2)
-    # puts heading.asciify('Bucketlist').colorize(:yellow)
-    # bucketlist menu
+    # Main bucketlist menu
     while bucketlist_loop_running
       puts heading.asciify('Bucketlist').colorize(:yellow)
       case bucketlistmenu(prompt4)
+      # viewing bucketlist
       when 1
         wait_clear(2)
         puts heading.asciify('Bucketlist').colorize(:yellow)
@@ -109,12 +107,11 @@ loop do
             mainheading
           end
         end  
-  
+      # Adding to bucketlist
       when 2
         wait_clear(2)
         puts heading.asciify('Bucketlist').colorize(:yellow)
         bucketlist_instance.add
-        
         # end of bucketlist menu
         endofbucketlist_loop_running = true
         while endofbucketlist_loop_running
@@ -130,12 +127,11 @@ loop do
             mainheading
           end
         end  
-          
+      # Removing from Bucketlist
       when 3
         wait_clear(2)
         puts heading.asciify('Bucketlist').colorize(:yellow)
         bucketlist_instance.remove
-        
         # end of bucketlist menu
         endofbucketlist_loop_running = true
         while endofbucketlist_loop_running
@@ -151,8 +147,7 @@ loop do
             mainheading
           end
         end
-        
-
+      # CHOICE = EXIT
       when 4
         bucketlist_loop_running = false 
         wait_clear(2)
