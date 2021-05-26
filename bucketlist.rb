@@ -6,6 +6,7 @@ class Bucketlist
         @destinationlog = []
     end
 
+    # To view bucketlist
     def view
         puts "\n#{@name.capitalize}'s bucketlist of destinations:\n"
     
@@ -23,6 +24,19 @@ class Bucketlist
         else
           create
         end 
+    end
+
+    # To add to bucketlist
+    def add
+      system 'clear'
+      puts  "\nAdd a destination to your bucketlist:\n"
+      puts
+      print "> "
+      dest = gets.strip
+      @destinationlog = file_to_array(@file_path)
+      @destinationlog << dest
+      array_to_file(@destinationlog)
+      puts "\nYour destination has been added to your list!\n"
     end
     
 
