@@ -29,6 +29,7 @@ name = gets.strip.downcase
 
 quiz_instance = Quiz.new(name)
 generator_instance = Generator.new(name)
+bucketlist_instance = Bucketlist.new(name)
 
 
 loop do
