@@ -58,3 +58,23 @@ def generatormenu(prompt)
 
     prompt.select("What would you like to do now?\n", choices)
 end
+
+def bucketlistmenu(prompt)
+    choices = [
+    {name: "View my bucketlist", value: 1},
+    {name: "Add destination to bucketlist", value: 2},
+    {name: "Remove destination from bucketlist", value: 3},
+    {name: "Back to main menu", value: 4}
+    ]
+
+    prompt.select("\nWhat would you like to with your bucketlist?\n", choices)
+end
+
+def endofbucketlistmenu(prompt)
+    choices = [
+    {name: "Continue to view/edit bucketlist", value: 1},
+    {name: "Back to main menu", value: 2},
+    ]
+
+    prompt.select("\nWhat would you like to do now?\n", choices)
+end
