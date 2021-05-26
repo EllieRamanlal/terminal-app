@@ -14,9 +14,25 @@ prompt3 = TTY::Prompt.new(active_color: :green)
 prompt4 = TTY::Prompt.new(active_color: :yellow)
 heading = Artii::Base.new
 
+if ARGV.length > 0
+  flag, *rest = ARGV
+  ARGV.clear
+  case flag 
+  when '-h'
+      puts "See further documentation in readme"
+      exit
+  when '-v'
+      puts "This program is using Ruby version: #{RUBY_VERSION}"
+  when '-path'
+  else
+      puts "Invalid argument\n-h for program info\n-v for version info"
+      exit
+  end 
+end 
+
 
 #--------------------------------------------------------------------
-# start of program
+# main program
 #--------------------------------------------------------------------
 
 system 'clear'
