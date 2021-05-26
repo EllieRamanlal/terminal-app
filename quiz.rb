@@ -23,7 +23,6 @@ class Quiz
 
         prompt2 = TTY::Prompt.new(active_color: :magenta)
 
-
         choices = [
             {name: "I want that summer sun!", value: 1},
             {name: "Get me in my winter woolies!", value: 2},

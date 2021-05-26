@@ -15,8 +15,6 @@ prompt4 = TTY::Prompt.new(active_color: :yellow)
 heading = Artii::Base.new
 
 
-
-
 #--------------------------------------------------------------------
 # start of program
 #--------------------------------------------------------------------
@@ -86,23 +84,75 @@ loop do
   when 3
     bucketlist_loop_running = true
     wait_clear(2)
-    puts heading.asciify('Bucketlist').colorize(:yellow)
+    # puts heading.asciify('Bucketlist').colorize(:yellow)
     # bucketlist menu
     while bucketlist_loop_running
+      puts heading.asciify('Bucketlist').colorize(:yellow)
       case bucketlistmenu(prompt4)
       when 1
         wait_clear(2)
         puts heading.asciify('Bucketlist').colorize(:yellow)
         bucketlist_instance.view
         sleep(3)
-        # NEED TO FIX END OF BUCKETLIST MENU
-        endofbucketlistmenu(prompt4)
+        # end of bucketlist menu
+        endofbucketlist_loop_running = true
+        while endofbucketlist_loop_running
+          case endofbucketlistmenu(prompt4)
+          when 1
+            wait_clear(2)
+            endofbucketlist_loop_running = false
+            bucketlist_loop_running = true
+          when 2
+            endofbucketlist_loop_running = false
+            bucketlist_loop_running = false
+            wait_clear(2)
+            mainheading
+          end
+        end  
+  
       when 2
+        wait_clear(2)
+        puts heading.asciify('Bucketlist').colorize(:yellow)
         bucketlist_instance.add
-        endofbucketlistmenu(prompt4)
+        
+        # end of bucketlist menu
+        endofbucketlist_loop_running = true
+        while endofbucketlist_loop_running
+          case endofbucketlistmenu(prompt4)
+          when 1
+            wait_clear(2)
+            endofbucketlist_loop_running = false
+            bucketlist_loop_running = true
+          when 2
+            endofbucketlist_loop_running = false
+            bucketlist_loop_running = false
+            wait_clear(2)
+            mainheading
+          end
+        end  
+          
       when 3
+        wait_clear(2)
+        puts heading.asciify('Bucketlist').colorize(:yellow)
         bucketlist_instance.remove
-        endofbucketlistmenu(prompt4)
+        
+        # end of bucketlist menu
+        endofbucketlist_loop_running = true
+        while endofbucketlist_loop_running
+          case endofbucketlistmenu(prompt4)
+          when 1
+            wait_clear(2)
+            endofbucketlist_loop_running = false
+            bucketlist_loop_running = true
+          when 2
+            endofbucketlist_loop_running = false
+            bucketlist_loop_running = false
+            wait_clear(2)
+            mainheading
+          end
+        end
+        
+
       when 4
         bucketlist_loop_running = false 
         wait_clear(2)

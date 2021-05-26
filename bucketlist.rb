@@ -29,7 +29,6 @@ class Bucketlist
 
     # To add destination to bucketlist
     def add
-      system 'clear'
       puts  "\nAdd a destination to your bucketlist:\n"
       puts
       print "> "
@@ -42,7 +41,6 @@ class Bucketlist
 
     # To remove destination from bucketlist
     def remove
-      system 'clear'
       puts "Remove a destination from your bucketlist:\n"
       @destinationlog = file_to_array(@file_path)
       view
