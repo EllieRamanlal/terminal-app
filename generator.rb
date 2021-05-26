@@ -43,14 +43,19 @@ class Generator
         end
 
         country = locations.sample
-        puts "We have the perfect country for you!"
+        puts " "
+        puts "We have found a destination for you!"
         sleep (1)
-        puts
+        puts " "
+        puts " "
         puts "We think you would love..."
         sleep (2)
-        puts
+        puts " "
         puts "#{country}!".colorize(:light_cyan)
         sleep (2)
+        puts "\nLove this suggestions? Keep track of all your favourite destination suggestions using our Bucketlist feature!"
+        sleep (3)
+        puts " "
         puts " "
     end
 
