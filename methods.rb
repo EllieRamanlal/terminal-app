@@ -40,3 +40,12 @@ def mainmenu(prompt)
 
     prompt.select("What would you like to do today?", choices)
 end
+
+def quizmenu(prompt)
+    choices = [
+    {name: "Do quiz again", value: 1},
+    {name: "Back to main menu", value: 2},
+    ]
+
+    prompt.select("What would you like to do now?\n", choices)
+end
