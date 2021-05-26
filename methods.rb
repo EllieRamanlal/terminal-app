@@ -26,3 +26,17 @@ def greeting
     puts "\nWhat is your name?"
     print ">  "
 end
+
+
+# menus
+
+def mainmenu(prompt)
+    choices = [
+    {name: "Holiday destination quiz", value: 1},
+    {name: "Random destination generator", value: 2},
+    {name: "View/edit bucketlist destinations", value: 3},
+    {name: "Exit", value: 4}
+    ]
+
+    prompt.select("What would you like to do today?", choices)
+end

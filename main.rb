@@ -11,33 +11,11 @@ prompt = TTY::Prompt.new
 heading = Artii::Base.new :font => 'nancyj-underlined'
 
 
-def greeting
-    puts "Hi there!"
-    puts
-    puts "Welcome to HolidayHelper - where we help you find your perfect holiday destination!"
-    sleep (2)
-    puts
-    puts "What is your name?"
-    print ">  "
-end
-
-def menu(prompt)
-    choices = [
-    {name: "Holiday destination quiz", value: 1},
-    {name: "Random destination generator", value: 2},
-    {name: "View previous destination recommendations", value: 3},
-    {name: "Exit", value: 4}
-    ]
-
-    prompt.select("\nWhat would you like to do today?", choices)
-end
 
 
-
-
-#-------------------------------------------------------
-# main body
-#-------------------------------------------------------
+#--------------------------------------------------------------------
+# start of program
+#--------------------------------------------------------------------
 
 
 
