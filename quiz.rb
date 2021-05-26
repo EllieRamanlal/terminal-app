@@ -25,8 +25,8 @@ class Quiz
 
 
         choices = [
-            {name: "Hot Weather", value: 1},
-            {name: "Cold Weather", value: 2},
+            {name: "I want that summer sun!", value: 1},
+            {name: "Get me in my winter woolies!", value: 2},
         ]
         weather = prompt2.select("\n\nFirstly, what is your preference for weather?\n", choices)
 
@@ -41,7 +41,8 @@ class Quiz
         ]
         vibe = prompt2.select("\nWhat kinds of activities would you like to be doing on your holiday?\n", choices)
 
-        system 'clear'
+        wait_clear(2)
+
 
         puts "Based on your preferences, we think you'd love to visit the following destination..."
         puts " "

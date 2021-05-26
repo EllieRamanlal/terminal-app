@@ -9,6 +9,7 @@ class Bucketlist
     # To view bucketlist
     def view
         puts "\n#{@name.capitalize}'s bucketlist of destinations:\n"
+        sleep(1.5)
     
         if file_exist?
           unless file_empty?
@@ -18,7 +19,7 @@ class Bucketlist
               end
             end
           else
-            puts "\nLooks like you haven't added any destinations yet!\n"
+            puts "\nLooks like you haven't created a bucketlist yet - better start adding some of those dream destinations!\n"
             
           end
         else

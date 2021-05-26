@@ -28,7 +28,6 @@ class Generator
             "Barcelona, Spain",
         ]
 
-        system 'clear'
 
         puts "fetching random destination..."
         puts " "
@@ -42,18 +41,22 @@ class Generator
             bar.advance 
         end
 
+        system 'clear'
+
+        heading = Artii::Base.new
+        puts heading.asciify('Random Desintation Generator').colorize(:green)
+
         country = locations.sample
         puts " "
         puts "We have found a destination for you!"
         sleep (1)
         puts " "
-        puts " "
         puts "We think you would love..."
         sleep (2)
         puts " "
-        puts "#{country}!".colorize(:light_cyan)
+        puts "#{country}!".colorize(:green)
         sleep (2)
-        puts "\nLove this suggestions? Keep track of all your favourite destination suggestions using our Bucketlist feature!"
+        puts "\n\nLove this suggestion? Keep track of all your favourite destination suggestions using our Bucketlist feature! (accessed via main menu)"
         sleep (3)
         puts " "
         puts " "
