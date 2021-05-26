@@ -4,6 +4,13 @@ class Quiz
         @name = name
     end
 
+    def quizwelcome
+        puts "Looks like you're ready to find a destination for your next holiday!"
+        sleep(3)
+        puts "\nAll you need to do is answer a couple of questions - and we'll find the perfect destination for you!"
+        sleep(4)
+    end
+
     def questions
 
         hot = ["Kauai, Hawaii", "Costa Rica", "Ho Chi Minh City, Vietnam", "Barcelona, Spain"]
@@ -14,13 +21,6 @@ class Quiz
         culture = ["Ho Chi Minh City, Vietnam", "kyoto, Japan"]
         nightlife = ["Barcelona, Spain", "Prague, Czech Republic"]
 
-        system 'clear'
-
-        puts "Looks like you're ready to find a destination for your next holiday!"
-        sleep(3)
-        puts "\nAll you need to do is answer a couple of questions - and we'll find the perfect destination for you!"
-        sleep(4)
-
         prompt = TTY::Prompt.new(active_color: :cyan)
 
 
@@ -29,6 +29,7 @@ class Quiz
             {name: "Cold Weather", value: 2},
         ]
         weather = prompt.select("\n\nFirstly, what is your preference for weather?\n", choices)
+        
         sleep (2)
 
 
