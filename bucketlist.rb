@@ -34,7 +34,6 @@ class Bucketlist
       print "> "
       dest = gets.strip
       @destinationlog = file_to_array(@file_path)
-      @destinationlog << dest
       array_to_file(@destinationlog)
       sleep(2)
       puts "\nYour destination has been added to your bucketlist!\n"
@@ -43,15 +42,24 @@ class Bucketlist
 
     # To remove destination from bucketlist
     def remove
-      puts "Remove a destination from your bucketlist:\n"
+      puts "Looks like one of your destinations has no longer made the cut!\n\n"
+      sleep(1.5)
       @destinationlog = file_to_array(@file_path)
       view
-      puts "\nEnter the destination number that you'd like to remove:\n"
+      sleep (2)
+      puts "\n\nEnter the number of the destination that you'd like to remove:\n"
       print "> "
       dest_no = gets.to_i - 1
-      @destinationlog.delete_at dest_no
-      puts "\nThe destination has now been removed from your bucketlist\n"
-      array_to_file(@destinationlog)
+
+      if dest_no > @destinationlog.size - 1 || dest_no < 1
+        puts "\nuh oh! That's not a valid number from your list! Select to continue editing your bucketlist, then try again!\n"
+        sleep(2)
+      else
+        @destinationlog.delete_at dest_no
+        puts "\nThe destination has now been removed from your bucketlist\n"
+        array_to_file(@destinationlog)
+      end
+
     end
 
     private
