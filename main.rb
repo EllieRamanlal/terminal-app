@@ -23,6 +23,7 @@ if ARGV.length > 0
       exit
   when '-v'
       puts "This program is using Ruby version: #{RUBY_VERSION}"
+      exit
   when '-path'
   else
       puts "Invalid argument\n-h for program info\n-v for version info"
@@ -34,8 +35,6 @@ end
 #--------------------------------------------------------------------
 # main program
 #--------------------------------------------------------------------
-
-system 'clear'
 
 # program intro and welcome
 mainheading
