@@ -1,5 +1,7 @@
-require_relative "generator"
 require_relative "quiz"
+require_relative "generator"
+require_relative "bucketlist"
+require_relative "methods"
 
 require "artii"
 require "tty-prompt"
@@ -8,7 +10,7 @@ require "tty-progressbar"
 
 
 prompt = TTY::Prompt.new
-heading = Artii::Base.new :font => 'nancyj-underlined'
+heading = Artii::Base.new
 
 
 
@@ -17,17 +19,10 @@ heading = Artii::Base.new :font => 'nancyj-underlined'
 # start of program
 #--------------------------------------------------------------------
 
-
-
 system 'clear'
 
-# HolidayHelper heading
-puts heading.asciify(' HolidayHelper').colorize(:light_cyan)
-
-# airplane image
-puts File.readlines("plane.txt")
-
-# welcome message
+mainheading
+plane
 greeting
 
 name = gets.strip.downcase
