@@ -15,13 +15,12 @@ class Quiz
 
         hot = ["Kauai, Hawaii", "Costa Rica", "Ho Chi Minh City, Vietnam", "Barcelona, Spain"]
         cold = ["Kvalvika Beach, Lofoten Islands, Norway", "Whistler, Canada", "kyoto, Japan", "Prague, Czech Republic"]
-
         beach = ["Kauai, Hawaii", "Kvalvika Beach, Lofoten Islands, Norway"]
         adventure = ["Costa Rica", "Whistler, Canada"]
         culture = ["Ho Chi Minh City, Vietnam", "kyoto, Japan"]
         nightlife = ["Barcelona, Spain", "Prague, Czech Republic"]
-
         prompt2 = TTY::Prompt.new(active_color: :magenta)
+        heading = Artii::Base.new
 
         choices = [
             {name: "I want that summer sun!", value: 1},
@@ -30,7 +29,6 @@ class Quiz
         weather = prompt2.select("\n\nFirstly, what is your preference for weather?\n", choices)
 
         sleep (2)
-
 
         choices = [
             {name: "Beach – Time to relax", value: 1},
@@ -42,19 +40,20 @@ class Quiz
 
         wait_clear(2)
 
+        puts heading.asciify('Holiday Destination Quiz').colorize(:magenta)
 
-        puts "Based on your preferences, we think you'd love to visit the following destination..."
-        puts " "
-
-
-        bar = TTY::ProgressBar.new("[:bar]", bar_format: :block, clear: true, total: 30)
+        puts "\nBased on your preferences, we think you'd love to visit the following destination...\n\n"
 
         sleep (1.5)
+
+        bar = TTY::ProgressBar.new("[:bar]", bar_format: :block, clear: true, total: 30)
        
         30.times do
             sleep(0.1)
             bar.advance 
         end
+
+        sleep (1)
 
         if weather == 1 && vibe == 1
             puts hot & beach
@@ -73,6 +72,11 @@ class Quiz
         elsif weather == 2 && vibe == 4
             puts cold & nightlife
         end
+
+        sleep (3)
+        puts "\n\n\nLove this suggestion? Keep track of all your favourite destination suggestions using our Bucketlist feature! (accessed via main menu)"
+
+        sleep(4)
 
 
     end

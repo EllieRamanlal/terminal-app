@@ -50,7 +50,7 @@ def quizmenu(prompt2)
     {name: "Back to main menu", value: 2},
     ]
 
-    prompt2.select("\nWhat would you like to do now?\n", choices)
+    prompt2.select("\n\n\nWhat would you like to do now?\n", choices)
 end
 
 def generatormenu(prompt3)
