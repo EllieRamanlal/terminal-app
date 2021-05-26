@@ -8,8 +8,10 @@ require "tty-prompt"
 require "colorize"
 require "tty-progressbar"
 
-
-prompt = TTY::Prompt.new
+prompt = TTY::Prompt.new(active_color: :cyan)
+prompt2 = TTY::Prompt.new(active_color: :magenta)
+prompt3 = TTY::Prompt.new(active_color: :green)
+prompt4 = TTY::Prompt.new(active_color: :yellow)
 heading = Artii::Base.new
 
 
@@ -32,11 +34,10 @@ quiz_instance = Quiz.new(name)
 generator_instance = Generator.new(name)
 bucketlist_instance = Bucketlist.new(name)
 
+# main program menu
 wait_clear(2)
 mainheading
 plane
-
-# main program menu
 
 loop do
   case mainmenu(prompt)
@@ -44,12 +45,12 @@ loop do
   when 1
     quiz_loop_running = true
     wait_clear(2)
-    puts heading.asciify('Holiday Destination Quiz').colorize(:light_cyan)
+    puts heading.asciify('Holiday Destination Quiz').colorize(:magenta)
     quiz_instance.quizwelcome
     quiz_instance.questions
     # end of quiz menu
     while quiz_loop_running
-      case quizmenu(prompt)
+      case quizmenu(prompt2)
       when 1
         quiz_instance.questions
       when 2
@@ -61,11 +62,11 @@ loop do
   when 2
     generator_loop_running = true
     wait_clear(2)
-    puts heading.asciify('Random Desintation Generator').colorize(:light_cyan)
+    puts heading.asciify('Random Desintation Generator').colorize(:green)
     generator_instance.picker
     # end of generator menu
     while generator_loop_running
-      case generatormenu(prompt)
+      case generatormenu(prompt3)
       when 1
         generator_instance.picker
       when 2
@@ -77,20 +78,20 @@ loop do
   when 3
     bucketlist_loop_running = true
     wait_clear(2)
-    puts heading.asciify('Bucketlist').colorize(:light_cyan)
+    puts heading.asciify('Bucketlist').colorize(:blue)
     # bucketlist menu
     while bucketlist_loop_running
-      case bucketlistmenu(prompt)
+      case bucketlistmenu(prompt4)
       when 1
         bucketlist_instance.view
         # NEED TO FIX END OF BUCKETLIST MENU
-        endofbucketlistmenu(prompt)
+        endofbucketlistmenu(prompt4)
       when 2
         bucketlist_instance.add
-        endofbucketlistmenu(prompt)
+        endofbucketlistmenu(prompt4)
       when 3
         bucketlist_instance.remove
-        endofbucketlistmenu(prompt)
+        endofbucketlistmenu(prompt4)
       when 4
         bucketlist_loop_running = false 
       end

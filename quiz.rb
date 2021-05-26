@@ -21,14 +21,14 @@ class Quiz
         culture = ["Ho Chi Minh City, Vietnam", "kyoto, Japan"]
         nightlife = ["Barcelona, Spain", "Prague, Czech Republic"]
 
-        prompt = TTY::Prompt.new(active_color: :cyan)
+        prompt2 = TTY::Prompt.new(active_color: :magenta)
 
 
         choices = [
             {name: "Hot Weather", value: 1},
             {name: "Cold Weather", value: 2},
         ]
-        weather = prompt.select("\n\nFirstly, what is your preference for weather?\n", choices)
+        weather = prompt2.select("\n\nFirstly, what is your preference for weather?\n", choices)
 
         sleep (2)
 
@@ -39,7 +39,7 @@ class Quiz
             {name: "Culture – show me the history", value: 3},
             {name: "Nightlife – time to get loose", value: 4},
         ]
-        vibe = prompt.select("\nWhat kinds of activities would you like to be doing on your holiday?\n", choices)
+        vibe = prompt2.select("\nWhat kinds of activities would you like to be doing on your holiday?\n", choices)
 
         system 'clear'
 

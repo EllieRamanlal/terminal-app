@@ -30,6 +30,7 @@ end
 
 # menus
 
+
 def mainmenu(prompt)
     choices = [
     {name: "Holiday destination quiz", value: 1},
@@ -41,25 +42,25 @@ def mainmenu(prompt)
     prompt.select("\nWhat would you like to do today?", choices)
 end
 
-def quizmenu(prompt)
+def quizmenu(prompt2)
     choices = [
     {name: "Do quiz again", value: 1},
     {name: "Back to main menu", value: 2},
     ]
 
-    prompt.select("\nWhat would you like to do now?\n", choices)
+    prompt2.select("\nWhat would you like to do now?\n", choices)
 end
 
-def generatormenu(prompt)
+def generatormenu(prompt3)
     choices = [
     {name: "Generate another random destination", value: 1},
     {name: "Back to main menu", value: 2},
     ]
 
-    prompt.select("\nWhat would you like to do now?\n", choices)
+    prompt3.select("\nWhat would you like to do now?\n", choices)
 end
 
-def bucketlistmenu(prompt)
+def bucketlistmenu(prompt4)
     choices = [
     {name: "View my bucketlist", value: 1},
     {name: "Add destination to bucketlist", value: 2},
@@ -67,16 +68,16 @@ def bucketlistmenu(prompt)
     {name: "Back to main menu", value: 4}
     ]
 
-    prompt.select("\nWhat would you like to with your bucketlist?\n", choices)
+    prompt4.select("\nWhat would you like to with your bucketlist?\n", choices)
 end
 
-def endofbucketlistmenu(prompt)
+def endofbucketlistmenu(prompt4)
     choices = [
     {name: "Continue to view/edit bucketlist", value: 1},
     {name: "Back to main menu", value: 2},
     ]
 
-    prompt.select("\nWhat would you like to do now?\n", choices)
+    prompt4.select("\nWhat would you like to do now?\n", choices)
 end
 
 
