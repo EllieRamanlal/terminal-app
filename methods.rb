@@ -78,3 +78,11 @@ def endofbucketlistmenu(prompt)
 
     prompt.select("\nWhat would you like to do now?\n", choices)
 end
+
+
+# clear screen
+
+def wait_clear(time)
+    sleep(time)
+    system "clear"
+end 
