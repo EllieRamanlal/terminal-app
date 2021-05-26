@@ -33,6 +33,7 @@ generator_instance = Generator.new(name)
 bucketlist_instance = Bucketlist.new(name)
 
 # main program menu
+
 loop do
   case mainmenu(prompt)
   # Quiz
@@ -42,13 +43,31 @@ loop do
     puts heading.asciify('Holiday Destination Quiz').colorize(:light_cyan)
     quiz_instance.quizwelcome
     quiz_instance.questions
+    # end of quiz menu
+    while quiz_loop_running
+      case quizmenu(prompt)
+      when 1
+        quiz_instance.questions
+      when 2
+        quiz_loop_running = false
+      end
+    end  
 
   # Random generator
   when 2
     generator_loop_running = true
     wait_clear(2)
     puts heading.asciify('Random Desintation Generator').colorize(:light_cyan)
-    generator_instance.picker 
+    generator_instance.picker
+    # end of generator menu
+    while generator_loop_running
+      case quizmenu(prompt)
+      when 1
+        generator_instance.picker
+      when 2
+        generator_loop_running = false
+      end
+    end  
 
   # Bucketlist
   when 3
@@ -60,10 +79,14 @@ loop do
       case bucketlistmenu(prompt)
       when 1
         bucketlist_instance.view
+        # NEED TO FIX END OF BUCKETLIST MENU
+        endofbucketlistmenu(prompt)
       when 2
         bucketlist_instance.add
+        endofbucketlistmenu(prompt)
       when 3
         bucketlist_instance.remove
+        endofbucketlistmenu(prompt)
       when 4
         bucketlist_loop_running = false 
       end
