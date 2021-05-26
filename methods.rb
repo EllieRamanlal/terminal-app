@@ -49,3 +49,12 @@ def quizmenu(prompt)
 
     prompt.select("What would you like to do now?\n", choices)
 end
+
+def generatormenu(prompt)
+    choices = [
+    {name: "Generate another random destination", value: 1},
+    {name: "Back to main menu", value: 2},
+    ]
+
+    prompt.select("What would you like to do now?\n", choices)
+end
