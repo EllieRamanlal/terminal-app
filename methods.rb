@@ -38,7 +38,7 @@ def mainmenu(prompt)
     {name: "Exit", value: 4}
     ]
 
-    prompt.select("What would you like to do today?", choices)
+    prompt.select("\nWhat would you like to do today?", choices)
 end
 
 def quizmenu(prompt)
@@ -47,7 +47,7 @@ def quizmenu(prompt)
     {name: "Back to main menu", value: 2},
     ]
 
-    prompt.select("What would you like to do now?\n", choices)
+    prompt.select("\nWhat would you like to do now?\n", choices)
 end
 
 def generatormenu(prompt)
@@ -56,7 +56,7 @@ def generatormenu(prompt)
     {name: "Back to main menu", value: 2},
     ]
 
-    prompt.select("What would you like to do now?\n", choices)
+    prompt.select("\nWhat would you like to do now?\n", choices)
 end
 
 def bucketlistmenu(prompt)

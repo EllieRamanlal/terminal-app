@@ -32,6 +32,10 @@ quiz_instance = Quiz.new(name)
 generator_instance = Generator.new(name)
 bucketlist_instance = Bucketlist.new(name)
 
+wait_clear(2)
+mainheading
+plane
+
 # main program menu
 
 loop do
@@ -61,7 +65,7 @@ loop do
     generator_instance.picker
     # end of generator menu
     while generator_loop_running
-      case quizmenu(prompt)
+      case generatormenu(prompt)
       when 1
         generator_instance.picker
       when 2

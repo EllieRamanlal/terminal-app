@@ -45,7 +45,7 @@ class Bucketlist
       puts "Remove a destination from your bucketlist:\n"
       @destinationlog = file_to_array(@file_path)
       view
-      puts "Enter the destination number that you'd like to remove:\n"
+      puts "\nEnter the destination number that you'd like to remove:\n"
       print "> "
       dest_no = gets.to_i - 1
       @destinationlog.delete_at dest_no

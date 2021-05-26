@@ -5,7 +5,7 @@ class Quiz
     end
 
     def quizwelcome
-        puts "Looks like you're ready to find a destination for your next holiday!"
+        puts "\n\nLooks like you're ready to find a destination for your next holiday!"
         sleep(3)
         puts "\nAll you need to do is answer a couple of questions - and we'll find the perfect destination for you!"
         sleep(4)
@@ -29,7 +29,7 @@ class Quiz
             {name: "Cold Weather", value: 2},
         ]
         weather = prompt.select("\n\nFirstly, what is your preference for weather?\n", choices)
-        
+
         sleep (2)
 
 
@@ -39,7 +39,7 @@ class Quiz
             {name: "Culture – show me the history", value: 3},
             {name: "Nightlife – time to get loose", value: 4},
         ]
-        vibe = prompt.select("\n\nWhat kinds of activities would you like to be doing on your holiday?\n", choices)
+        vibe = prompt.select("\nWhat kinds of activities would you like to be doing on your holiday?\n", choices)
 
         system 'clear'
 
