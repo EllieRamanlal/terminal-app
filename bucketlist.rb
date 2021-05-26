@@ -52,7 +52,44 @@ class Bucketlist
       puts "\nThe destination has now been removed from your bucketlist\n"
       array_to_file(@destinationlog)
     end
+
+    private
+
+    def file_empty?
+      File.zero?(@file_path)
+    end
+
+    def file_exist?
+      File.exist?(@file_path)
+    end
+
+    def create
+      puts "\nYou haven't added any destinations to your list yet!\n"
+      file = File.new(@file_path, 'w')
+      file.close
+    end
+
+    def file_to_array(path) 
+    # read file content into an array
+      array = []
+      if file_exist?
+        File.open(path, 'r') do |file|
+          file.each_line do |line|
+            array << line.strip
+          end
+        end
+      else
+        create
+      end
+      array
+    end # file_to_array
+
+    def array_to_file(array)
+      File.open(@file_path, 'w') do |file|
+        array.each do |line|
+          file.puts line
+        end
+      end
+    end
     
-
-
 end
