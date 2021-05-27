@@ -100,7 +100,7 @@ Please follow the below instructions in order to run HolidayHelper
 
 •	Colorize
 
-•	TTY-promt
+•	TTY-prompt
 
 •	TTY-progressbar  
 
@@ -122,7 +122,7 @@ Please follow the below link to access the Google Sheet for the manual testing I
 
 ## Project Management
 
-For the project management of this assignment, I employed the use of a trello board. I broke tha assigment down into a range of smaller, more manageable tasks and added these to my trello board, then used checklists to further break these tasks down and track the progress of each task. In order to manage my time, I used coloured labels to indicate the size of a task (green, orange and blue), and I additionally assigned tasked priority labels. Please see the below screenshots of the progress of my trello board throughout the assignment. 
+For the project management of this assignment, I employed the use of a trello board. I broke the assigment down into a range of smaller, more manageable tasks and added these to my trello board, then used checklists to further break these tasks down and track the progress of each task. In order to manage my time, I used coloured labels to indicate the size of a task (green, orange and blue), and I additionally assigned tasked priority labels. Please see the below screenshots of the progress of my trello board throughout the assignment. 
 
 **Trello progress 1/6**
 
