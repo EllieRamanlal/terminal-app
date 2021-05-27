@@ -4,7 +4,7 @@
 <https://github.com/EllieRamanlal/terminal-app>
 
 
-___
+
 ## Purpose and Scope
 
 **What HolidayHelper will do**
@@ -22,7 +22,7 @@ The target audience of this app will be individuals who are seeking inspiration 
 A target audience member will be able to follow instructions in the README to install the requirements to run HolidayHelper. Users will then run the HolidayHelper application from the command line. The needs of the target audience member will determine how they choose to use the app and what features they will use. Members of the target audience that are looking for a recommendation for their next holiday destination can navigate their way through the holiday quiz feature of the app, whereas users looking for a more spontaneous destination recommendation can use the random destination generation. Whilst using the app, target audience members can utilize the bucketlist feature in order to keep track of these recommendations.
 
 
-___
+
 ## Features
 
 HolidayHelper includes three main features, which are all accessible from the HolidayHelper main menu:
@@ -40,7 +40,7 @@ This feature allows the user to receive a randomly generated destination. This f
 This feature allows the user to maintain a bucket list of holiday destinations. Once navigating to this feature, users will be provide with a menu with three options – to view their bucketlist, to add a destination to their bucketlist, or to remove a destination from their bucketlist. If the user chooses to view their bucketlist, the program will print their logged destinations to the screen (and if they haven’t already created a bucketlist, the program will create a txt file for the user which they can then add to). If the user chooses to either add or remove to/from their bucket list, they will be prompted to type in a destination (or its number on the bucketlist), and HolidayHelper will add/remove this from their bucketlist file. After this process, the user will be provided with a menu with two options – to continue to view/edit their bucketlist or to return back to the main menu. 
 
 
-___
+
 ## User interaction and experience
 
 **How the user will find out how to interact with each feature**
@@ -56,19 +56,6 @@ The user will be able to access all three of the main features HolidayHelper via
 The application has been designed to handle both ArgumentErrors and StandardErrors in the main program loop. In the event of an ArgumentError, the user will be displayed with the message “An Argument error seems to have occurred – please try again”. In the event of a StandardError, the user will be displayed with the message “An error seems to have occurred – please try again”
 
 
-___
-## Control Flow Diagram
-
-![control flow diagram](docs/control-flow-diagram.png)
-
-
-___
-## Trello Board
-
-
-
-
-___
 ## Installation
 
 **System Requirements**
@@ -76,8 +63,26 @@ Holiday Helper uses Ruby version 2.7.2 and Bundler version 2.2.17
 
 **Instructions for installation**
 
+Please follow the below instructions in order to run HolidayHelper
 
-**Command line arguments**
+1. Clone this repository to your local machine by running the following command
+
+
+        git clone https://github.com/EllieRamanlal/portfolio.git
+
+
+2. `cd` into the `/terminal-app/src` folder and run the following command in order to install all the requirements to run HolidayHelper (Homebrew, Ruby, Bundler, and any gem dependancies)
+
+
+        ./install.sh
+
+
+3. HolidayHelper can then be run using the following command
+
+        ./run_app.sh
+
+
+**Command line arguments for HolidayHelper**
 `-h` for program information and help
 `-v` for ruby version information
 
@@ -86,5 +91,46 @@ Holiday Helper uses Ruby version 2.7.2 and Bundler version 2.2.17
 •	Colorize
 •	TTY-promt
 •	TTY-progressbar
+
+
+
+## Testing
+
+Please follow the below link to access the Google Sheet for the manual testing I completed for HolidayHelper:
+
+<https://docs.google.com/spreadsheets/d/1itFpIDG5hxCjK_B_LWea6ZD0tAFNTNWO3RDYK1_VjUU/edit?usp=sharing>
+
+
+
+## Control Flow Diagram
+
+![control flow diagram](docs/Control-flow-diagram.png)
+
+
+
+## Project Management
+For the project management of this assignment, I employed the use of a trello board. I broke tha assigment down into a range of smaller, more manageable tasks and added these to my trello board, then used checklists to further break these tasks down and track the progress of each task. In order to manage my time, I used coloured labels to indicate the size of a task (green, orange and blue), and I additionally assigned tasked priority labels. Please see the below screenshots of the progress of my trello board throughout the assignment. 
+
+**Trello progress 1/6**
+![Trello1/6](docs/Trello-1.png)
+
+**Trello progress 2/6**
+![Trello2/6](docs/Trello-2.png)
+
+**Trello progress 3/6**
+![Trello3/6](docs/Trello-3.png)
+
+**Trello progress 4/6**
+![Trello4/6](docs/Trello-4.png)
+
+**Trello progress 5/6**
+![Trello5/6](docs/Trello-5.png)
+
+**Trello progress 6/6**
+![Trello6/6](docs/Trello-6.png)
+
+
+
+
 
 
