@@ -179,7 +179,7 @@ begin
     end
   end
 rescue ArgumentError
-  puts "An argument error has occurred"
+  puts "An Argument error seems to have occured - Please try again"
 rescue StandardError
-  puts "A standard error has occurred"
+  puts "An error seems to have occured - Please try again"
 end
