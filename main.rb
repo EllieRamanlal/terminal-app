@@ -36,6 +36,8 @@ end
 # main program
 #--------------------------------------------------------------------
 
+system 'clear'
+
 # program intro and welcome
 mainheading
 plane
