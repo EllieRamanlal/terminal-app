@@ -5,7 +5,7 @@
 
 
 ___
-### Purpose and Scope
+## Purpose and Scope
 
 **What HolidayHelper will do**
 
@@ -23,7 +23,7 @@ A target audience member will be able to follow instructions in the README to in
 
 
 ___
-### Features
+## Features
 
 HolidayHelper includes three main features, which are all accessible from the HolidayHelper main menu:
 
@@ -41,7 +41,7 @@ This feature allows the user to maintain a bucket list of holiday destinations. 
 
 
 ___
-### User interaction and experience
+## User interaction and experience
 
 **How the user will find out how to interact with each feature**
 
@@ -57,22 +57,25 @@ The application has been designed to handle both ArgumentErrors and StandardErro
 
 
 ___
-### Control Flow Diagram
+## Control Flow Diagram
 
 ![control flow diagram](docs/control-flow-diagram.png)
 
 
 ___
-### Trello Board
+## Trello Board
 
 
 
 
 ___
-### Installation
+## Installation
 
 **System Requirements**
 Holiday Helper uses Ruby version 2.7.2 and Bundler version 2.2.17
+
+**Instructions for installation**
+
 
 **Command line arguments**
 `-h` for program information and help
