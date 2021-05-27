@@ -2,7 +2,7 @@
 &nbsp;
 **GitHub Repository:**
 <https://github.com/EllieRamanlal/terminal-app>  
-&nbsp;
+&nbsp;  
 
 ## Purpose and Scope
 
@@ -18,8 +18,8 @@ The target audience of this app will be individuals who are seeking inspiration 
 
 **How the target audience will use HolidayHelper**
 
-A target audience member will be able to follow instructions in the README to install the requirements to run HolidayHelper. Users will then run the HolidayHelper application from the command line. The needs of the target audience member will determine how they choose to use the app and what features they will use. Members of the target audience that are looking for a recommendation for their next holiday destination can navigate their way through the holiday quiz feature of the app, whereas users looking for a more spontaneous destination recommendation can use the random destination generation. Whilst using the app, target audience members can utilize the bucketlist feature in order to keep track of these recommendations.  
-&nbsp;
+A target audience member will be able to follow instructions in the README to install the requirements to run HolidayHelper. Users will then run the HolidayHelper application from the command line. The needs of the target audience member will determine how they choose to use the app and what features they will use. Members of the target audience that are looking for a recommendation for their next holiday destination can navigate their way through the holiday quiz feature of the app, whereas users looking for a more spontaneous destination recommendation can use the random destination generation. Whilst using the app, target audience members can utilize the bucketlist feature in order to keep track of these recommendations.   
+&nbsp;  
 
 ## Features
 
@@ -35,8 +35,9 @@ This feature allows the user to receive a randomly generated destination. This f
 
 **Bucketlist**
 
-This feature allows the user to maintain a bucket list of holiday destinations. Once navigating to this feature, users will be provide with a menu with three options – to view their bucketlist, to add a destination to their bucketlist, or to remove a destination from their bucketlist. If the user chooses to view their bucketlist, the program will print their logged destinations to the screen (and if they haven’t already created a bucketlist, the program will create a txt file for the user which they can then add to). If the user chooses to either add or remove to/from their bucket list, they will be prompted to type in a destination (or its number on the bucketlist), and HolidayHelper will add/remove this from their bucketlist file. After this process, the user will be provided with a menu with two options – to continue to view/edit their bucketlist or to return back to the main menu. 
-&nbsp;
+This feature allows the user to maintain a bucket list of holiday destinations. Once navigating to this feature, users will be provide with a menu with three options – to view their bucketlist, to add a destination to their bucketlist, or to remove a destination from their bucketlist. If the user chooses to view their bucketlist, the program will print their logged destinations to the screen (and if they haven’t already created a bucketlist, the program will create a txt file for the user which they can then add to). If the user chooses to either add or remove to/from their bucket list, they will be prompted to type in a destination (or its number on the bucketlist), and HolidayHelper will add/remove this from their bucketlist file. After this process, the user will be provided with a menu with two options – to continue to view/edit their bucketlist or to return back to the main menu.   
+&nbsp;  
+
 
 ## User interaction and experience
 
@@ -52,6 +53,7 @@ The user will be able to access all three of the main features HolidayHelper via
 
 The application has been designed to handle both ArgumentErrors and StandardErrors in the main program loop. In the event of an ArgumentError, the user will be displayed with the message “An Argument error seems to have occurred – please try again”. In the event of a StandardError, the user will be displayed with the message “An error seems to have occurred – please try again”
 &nbsp;
+
 
 ## Installation
 
@@ -96,7 +98,7 @@ Please follow the below instructions in order to run HolidayHelper
 •	TTY-promt
 
 •	TTY-progressbar
-&nbsp;
+&nbsp;  
 
 
 ## Testing
@@ -104,13 +106,13 @@ Please follow the below instructions in order to run HolidayHelper
 Please follow the below link to access the Google Sheet for the manual testing I completed for HolidayHelper:
 
 <https://docs.google.com/spreadsheets/d/1itFpIDG5hxCjK_B_LWea6ZD0tAFNTNWO3RDYK1_VjUU/edit?usp=sharing>
-&nbsp;
+&nbsp;  
 
 
 ## Control Flow Diagram
 
 ![control flow diagram](docs/Control-flow-diagram.png)
-&nbsp;
+&nbsp;  
 
 
 ## Project Management
