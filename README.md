@@ -52,8 +52,8 @@ The user will be able to access all three of the main features HolidayHelper via
 **How errors will be handled/displayed to the user**
 
 The application has been designed to handle both ArgumentErrors and StandardErrors in the main program loop. In the event of an ArgumentError, the user will be displayed with the message “An Argument error seems to have occurred – please try again”. In the event of a StandardError, the user will be displayed with the message “An error seems to have occurred – please try again”
-&nbsp;
 
+&nbsp;
 
 ## Installation
 
@@ -91,7 +91,7 @@ Please follow the below instructions in order to run HolidayHelper
 `-h` for program information and help
 
 `-v` for ruby version information  
-&nbsp; 
+ 
 &nbsp; 
 
 **Gem Dependencies**
@@ -103,7 +103,7 @@ Please follow the below instructions in order to run HolidayHelper
 •	TTY-promt
 
 •	TTY-progressbar  
-&nbsp;   
+
 &nbsp; 
 
 ## Testing
@@ -111,14 +111,14 @@ Please follow the below instructions in order to run HolidayHelper
 Please follow the below link to access the Google Sheet for the manual testing I completed for HolidayHelper:
 
 <https://docs.google.com/spreadsheets/d/1itFpIDG5hxCjK_B_LWea6ZD0tAFNTNWO3RDYK1_VjUU/edit?usp=sharing>
-&nbsp;  
-
+ 
+&nbsp; 
 
 ## Control Flow Diagram
 
 ![control flow diagram](docs/Control-flow-diagram.png)
-&nbsp;  
 
+&nbsp;  
 
 ## Project Management
 
