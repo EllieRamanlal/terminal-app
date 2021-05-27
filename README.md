@@ -59,35 +59,40 @@ The application has been designed to handle both ArgumentErrors and StandardErro
 
 **System Requirements**
 
-Holiday Helper uses Ruby version 2.7.2 and Bundler version 2.2.17
-&nbsp;
+Holiday Helper uses Ruby version 2.7.2 and Bundler version 2.2.17  
+&nbsp; 
+&nbsp;  
+
 **Instructions for installation**
 
-Please follow the below instructions in order to run HolidayHelper
+Please follow the below instructions in order to run HolidayHelper  
 &nbsp;
+&nbsp; 
+
 1. Clone this repository to your local machine by running the following command
 
 
         git clone https://github.com/EllieRamanlal/portfolio.git
-&nbsp;
+&nbsp;  
 
 2. `cd` into the `/terminal-app/src` folder and run the following command in order to install all the requirements to run HolidayHelper (Homebrew, Ruby, Bundler, and any gem dependancies)
 
 
         ./install.sh
-&nbsp;
+&nbsp;  
 
 3. HolidayHelper can then be run using the following command
 
         ./run_app.sh
-&nbsp;
+&nbsp; 
 
 **Command line arguments for HolidayHelper**
 
 `-h` for program information and help
 
-`-v` for ruby version information
-&nbsp;
+`-v` for ruby version information  
+&nbsp; 
+&nbsp; 
 
 **Gem Dependencies**
 
@@ -97,9 +102,9 @@ Please follow the below instructions in order to run HolidayHelper
 
 •	TTY-promt
 
-•	TTY-progressbar
-&nbsp;  
-
+•	TTY-progressbar  
+&nbsp;   
+&nbsp; 
 
 ## Testing
 
