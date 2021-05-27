@@ -57,7 +57,7 @@ plane
 begin
   loop do
     case mainmenu(prompt)
-    # CHOICE = QUIZ
+    # CHOICE 1 = QUIZ
     when 1
       quiz_loop_running = true
       wait_clear(2)
@@ -77,7 +77,7 @@ begin
           mainheading
         end
       end  
-    # CHOICE = RANDOM GENERATOR
+    # CHOICE 2 = RANDOM GENERATOR
     when 2
       generator_loop_running = true
       wait_clear(2)
@@ -96,7 +96,7 @@ begin
           mainheading
         end
       end  
-    # CHOICE = BUCKETLIST
+    # CHOICE 3 = BUCKETLIST
     when 3
       bucketlist_loop_running = true
       wait_clear(2)
@@ -165,7 +165,7 @@ begin
               mainheading
             end
           end
-        # CHOICE = EXIT
+        # Exit
         when 4
           bucketlist_loop_running = false 
           wait_clear(2)
@@ -173,7 +173,7 @@ begin
         end
       end  
 
-    # Exit
+    # CHOICE 4 = EXIT
     when 4
       exit
     end
