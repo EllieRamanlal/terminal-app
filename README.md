@@ -59,6 +59,7 @@ The application has been designed to handle both ArgumentErrors and StandardErro
 ## Installation
 
 **System Requirements**
+
 Holiday Helper uses Ruby version 2.7.2 and Bundler version 2.2.17
 
 **Instructions for installation**
@@ -83,13 +84,19 @@ Please follow the below instructions in order to run HolidayHelper
 
 
 **Command line arguments for HolidayHelper**
+
 `-h` for program information and help
+
 `-v` for ruby version information
 
 **Gem Dependencies**
+
 •	Artii
+
 •	Colorize
+
 •	TTY-promt
+
 •	TTY-progressbar
 
 
@@ -112,21 +119,27 @@ Please follow the below link to access the Google Sheet for the manual testing I
 For the project management of this assignment, I employed the use of a trello board. I broke tha assigment down into a range of smaller, more manageable tasks and added these to my trello board, then used checklists to further break these tasks down and track the progress of each task. In order to manage my time, I used coloured labels to indicate the size of a task (green, orange and blue), and I additionally assigned tasked priority labels. Please see the below screenshots of the progress of my trello board throughout the assignment. 
 
 **Trello progress 1/6**
+
 ![Trello1/6](docs/Trello-1.png)
 
 **Trello progress 2/6**
+
 ![Trello2/6](docs/Trello-2.png)
 
 **Trello progress 3/6**
+
 ![Trello3/6](docs/Trello-3.png)
 
 **Trello progress 4/6**
+
 ![Trello4/6](docs/Trello-4.png)
 
 **Trello progress 5/6**
+
 ![Trello5/6](docs/Trello-5.png)
 
 **Trello progress 6/6**
+
 ![Trello6/6](docs/Trello-6.png)
 
 
