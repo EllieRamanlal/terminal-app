@@ -37,6 +37,7 @@ class Bucketlist
       array_to_file(@destinationlog)
       sleep(2)
       puts "\nYour destination has been added to your list!\n"
+      sleep(2)
     end
 
     # to remove from bucketlist
